@@ -1,0 +1,21 @@
+:root {
+  /* Palette */
+  --brand:  #1F5D50;
+  --accent: #B7483D;
+  --ink:    #0F172A;
+  --muted:  #64748B;
+  --bg:     #F7F7F4;
+  --card:   #FFFFFF;
+
+  /* Typography */
+  --font-serif: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:   #0B0E11;
+    --card: #111418;
+    --ink:  #E5E7EB;
+    --muted:#94A3B8;
+  }
+}
