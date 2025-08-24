@@ -1,21 +1,32 @@
 :root {
-  /* Palette */
-  --brand:  #1F5D50;
-  --accent: #B7483D;
-  --ink:    #0F172A;
-  --muted:  #64748B;
-  --bg:     #F7F7F4;
-  --card:   #FFFFFF;
+  /* Brand */
+  --brand:   #578A35;  /* your green */
 
-  /* Typography */
+  /* Accent (pick one later; default = antique gold that’s not loud) */
+  --accent:  #C7A76C;
+
+  /* Washed light base */
+  --bg:      #F6F6F3;  /* bright but softened white */
+  --ink:     #1E1E1E;  /* primary text */
+  --muted:   #616971;  /* secondary text */
+
+  /* Matte/charcoal panel surface (light, low contrast) */
+  --panel:   #ECEDEB;  /* think “paper grey” */
+  --panel-grad-a: rgba(17, 20, 24, 0.06);
+  --panel-grad-b: rgba(17, 20, 24, 0.03);
+
+  /* Card (if you want pure white sections sometimes) */
+  --card:    #FFFFFF;
+
   --font-serif: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+
+  /* optional aliases */
+  --twc-brand:  var(--brand);
+  --twc-accent: var(--accent);
+  --twc-ink:    var(--ink);
+  --twc-muted:  var(--muted);
+  --twc-bg:     var(--bg);
+  --twc-card:   var(--card);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:   #0B0E11;
-    --card: #111418;
-    --ink:  #E5E7EB;
-    --muted:#94A3B8;
-  }
-}
+/* If you later want a true dark mode, add .theme-dark to <html> and override here */

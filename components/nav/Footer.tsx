@@ -9,7 +9,7 @@ return (
 <div className="flex gap-4">
 <Link href="/privacy">Privacy</Link>
 <Link href="/terms">Terms</Link>
-<a href="https://evergreenparke.net/" target="_blank" rel="noreferrer">Evergreen Parke</a>
+<a href="https://evergreenparke.net/" target="_blank" rel="noreferrer">Evergreen Park Communitites </a>
 </div>
 </div>
 </footer>

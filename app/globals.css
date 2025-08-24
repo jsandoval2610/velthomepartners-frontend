@@ -1,8 +1,9 @@
 @import "tailwindcss";
+
 /* optional: tiny global resets */
 html, body { margin: 0; padding: 0; }
 
-
+/* you can keep these if you want, but not required unless you reference them elsewhere */
 :root {
   --twc-brand:  var(--brand);
   --twc-accent: var(--accent);
