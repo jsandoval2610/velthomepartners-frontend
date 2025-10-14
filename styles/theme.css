@@ -1,12 +1,13 @@
 :root {
   /* Brand */
-  --brand:   #578A35;  /* your green */
+  --brand:   #0B6556;  /* main logo color */
 
   /* Accent (pick one later; default = antique gold that’s not loud) */
   --accent:  #C7A76C;
 
   /* Washed light base */
   --bg:      #F6F6F3;  /* bright but softened white */
+  --bg-washed: #E7E3DA;
   --ink:     #1E1E1E;  /* primary text */
   --muted:   #616971;  /* secondary text */
 
@@ -17,6 +18,7 @@
 
   /* Card (if you want pure white sections sometimes) */
   --card:    #FFFFFF;
+  --cta-bg: #E8EEF0;
 
   --font-serif: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
 
@@ -27,6 +29,10 @@
   --twc-muted:  var(--muted);
   --twc-bg:     var(--bg);
   --twc-card:   var(--card);
+
+    /* NEW: subtle, brand-friendly tints (do not change --brand) */
+  --brand-tint-1: rgba(9, 77, 88, 0.08);  /* very light */
+  --brand-tint-2: rgba(9, 77, 88, 0.12);  /* light */
+  --brand-tint-3: rgba(9, 77, 88, 0.18);  /* medium hairline */
 }
 
-/* If you later want a true dark mode, add .theme-dark to <html> and override here */

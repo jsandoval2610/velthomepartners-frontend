@@ -12,3 +12,16 @@ html, body { margin: 0; padding: 0; }
   --twc-bg:     var(--bg);
   --twc-card:   var(--card);
 }
+
+/* === Full-bleed helper (escape max-width containers) === */
+@layer utilities {
+  .bleed-x {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+  }
+}
+
