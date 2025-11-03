@@ -57,7 +57,7 @@ export function Header() {
         </Link>
 
         {/* NAV + INVESTOR LOGIN */}
-        <ul className="hidden md:flex items-center gap-6 text-[15px]">
+        <ul className="hidden md:flex items-center gap-8 text-[15px]">
           {nav.map((i) => (
             <li key={i.href}>
               <Link

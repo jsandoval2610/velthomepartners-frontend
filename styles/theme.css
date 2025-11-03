@@ -3,11 +3,12 @@
   --brand:   #0B6556;  /* main logo color */
 
   /* Accent (pick one later; default = antique gold that’s not loud) */
-  --accent:  #C7A76C;
+  --accent2:  #C7A76C;
+  --accent:  #d67262;
 
   /* Washed light base */
   --bg:      #F6F6F3;  /* bright but softened white */
-  --bg-washed: #E7E3DA;
+  --bg-washed: #F9F7F1;
   --ink:     #1E1E1E;  /* primary text */
   --muted:   #616971;  /* secondary text */
 

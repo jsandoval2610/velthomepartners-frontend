@@ -25,8 +25,7 @@ export function ContactSection() {
   // Replace these with your real details
   const addressLine1 = '525 William Penn Place 28th Floor'
   const addressLine2 = 'Pittsburgh, PA 15219'
-  const phone = '(203) 501-0796'
-  const email = 'ag@velthomepartners.com'
+  const email = 'info@velthomepartners.com'
 
   return (
     <section aria-labelledby="contact-heading" className="mt-8 md:mt-10">
@@ -67,21 +66,6 @@ export function ContactSection() {
               <div className="mt-2 text-[color:var(--card)]">
                 <div>{addressLine1}</div>
                 <div>{addressLine2}</div>
-              </div>
-            </div>
-
-            {/* Phone */}
-            <div>
-              <div className="text-xs uppercase tracking-[0.18em] text-[color:var(--card)] opacity-80">
-                Phone
-              </div>
-              <div className="mt-2">
-                <a
-                  href={`tel:${phone.replace(/[^+\d]/g, '')}`}
-                  className="text-[color:var(--card)] underline decoration-[color:var(--card)] underline-offset-4 opacity-95 hover:opacity-100"
-                >
-                  {phone}
-                </a>
               </div>
             </div>
 

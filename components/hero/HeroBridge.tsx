@@ -26,7 +26,7 @@ export function HeroBridge() {
       <div className="relative mx-auto max-w-6xl px-4 pt-36 pb-[22vh] md:pt-40 md:pb-[28vh]">
         <div className="max-w-3xl">
           <p className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-white/70">
-            Value • Opportunistic • Vertically Integrated
+            Vertically Integrated
           </p>
           <h1 className="mt-3 text-4xl md:text-[44px] leading-[1.15] font-semibold text-white">
             Opportunistic value-driven real estate firm
