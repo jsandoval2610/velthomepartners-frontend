@@ -25,3 +25,18 @@ html, body { margin: 0; padding: 0; }
   }
 }
 
+@layer utilities {
+  /* Full-bleed is already present; keep it. */
+
+  /* Ensure tap targets aren't tiny on mobile */
+  .touch-target { min-height: 44px; min-width: 44px; }
+
+  /* Nice default section spacers that scale up */
+  .section-pad { @apply py-10 sm:py-12 md:py-16; }
+
+  /* Common responsive horizontal padding when not using container */
+  .pad-x { @apply px-4 sm:px-6 lg:px-8; }
+}
+
+
+

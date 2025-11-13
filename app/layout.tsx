@@ -11,10 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Ensure Tailwind breakpoints behave on phones */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </head>
       <body className="antialiased text-[color:var(--ink)]">
-        {/* Make the page a column that fills the viewport */}
         <div className="relative min-h-dvh flex flex-col bg-[color:var(--bg)]">
-          {/* light canvas with soft charcoal corners */}
+          {/* background canvas */}
           <div
             className="pointer-events-none fixed inset-0 -z-10"
             style={{
@@ -28,12 +31,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <Header />
 
-          {/* Let main consume leftover height so Footer drops to the bottom */}
-          <main className="flex-1 mx-auto max-w-6xl w-full">
+          <main className="flex-1 mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
             {children}
           </main>
 
           <Footer />
+          <div className="h-[env(safe-area-inset-bottom)]" />
         </div>
       </body>
     </html>
