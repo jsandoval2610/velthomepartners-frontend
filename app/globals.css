@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* optional: tiny global resets */
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
 
 /* you can keep these if you want, but not required unless you reference them elsewhere */
 :root {
@@ -37,6 +37,5 @@ html, body { margin: 0; padding: 0; }
   /* Common responsive horizontal padding when not using container */
   .pad-x { @apply px-4 sm:px-6 lg:px-8; }
 }
-
 
 

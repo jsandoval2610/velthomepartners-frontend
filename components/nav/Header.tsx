@@ -10,6 +10,7 @@ import { buttonStyles } from '@/components/ui/Button'
 const nav = [
   { href: '/team',        label: 'Team' },
   { href: '/investments', label: 'Investments' },
+  { href: '/learn',       label: 'Learn' },
 ]
 
 export function Header() {
@@ -40,7 +41,7 @@ export function Header() {
       <div className="mx-auto max-w-screen-xl flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" aria-label="Home" className="group inline-block">
-          <span className="relative block h-12 w-36 md:h-16 md:w-48 rounded-2xl">
+          <span className="relative block h-[86px] w-[210px] md:h-[102px] md:w-[250px] rounded-2xl">
             <Image
               src="/images/VeltHome.png"
               fill
@@ -48,7 +49,7 @@ export function Header() {
               className="object-contain rounded-[inherit]"
               priority
             />
-            <span className="pointer-events-none absolute inset-0 rounded-[inherit] ring-1 ring-black/10" />
+            <span className="pointer-events-none absolute inset-0 rounded-[inherit]" />
             <span className="pointer-events-none absolute left-0 -bottom-1 h-px w-full bg-black/10" />
             <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-0 bg-[var(--brand)] transition-all duration-200 ease-out group-hover:w-full" />
           </span>
@@ -72,8 +73,7 @@ export function Header() {
           ))}
           <li>
             <Link href="/investors" className={buttonStyles('primary')}>
-              <span className="relative z-10">Investor Login</span>
-              <span className="pointer-events-none absolute -inset-y-1 -inset-x-2 translate-x-[-150%] bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.38),transparent)] transition-transform duration-700 ease-out group-hover:translate-x-[150%]" />
+              Investor Login
             </Link>
           </li>
         </ul>
@@ -100,7 +100,7 @@ export function Header() {
 
       {/* Mobile menu (simple block under the bar) */}
       {open && (
-        <nav className="md:hidden border-t border-black/10 bg-[color:var(--card)]">
+        <nav className="md:hidden border-t border-black/10 bg-[var(--bg-washed)]">
           <ul className="px-4 py-2">
             {nav.map((i) => (
               <li key={i.href}>

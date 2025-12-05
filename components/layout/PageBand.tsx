@@ -7,20 +7,21 @@ export function PageBand({ children }: PropsWithChildren) {
     <section
       className={[
         'bleed-x relative w-screen',
-        'bg-[color:var(--bg-washed)]',
-        'pt-6 md:pt-10 pb-12 md:pb-16'
+        'overflow-hidden',
+        'bg-transparent',
+        'pt-16 md:pt-24 pb-20 md:pb-32',
+        'min-h-[60vh]',
+        'text-white'
       ].join(' ')}
     >
-      <div className="absolute inset-x-0 top-0 h-px bg-[rgba(9,77,88,0.12)]" />
-      {/* <div className="absolute inset-x-0 bottom-0 h-px bg-red-800" /> */}
-       <div
+      <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
+      <div
         className={[
-          'mx-auto max-w-6xl px-4',
+          'w-full px-6 sm:px-10',
           '[&>*:last-child]:mb-0',
           '[&>*:last-child]:pb-0',
         ].join(' ')}
       >
-      {/* <div className="mx-auto max-w-6xl px-4"> */}
         {children}
       </div>
     </section>

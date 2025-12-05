@@ -13,19 +13,21 @@ export function Section({
   children: ReactNode
 }) {
   return (
-    <section className={clsx('py-16', className)}>
-      {(title || subtitle) && (
-        <div className="mb-8">
-          {title && (
-            <h2 className="text-3xl md:text-4xl font-semibold inline-block relative text-[color:var(--brand)]">
-              {title}
-              <span className="block h-[3px] w-12 mt-3 bg-[var(--brand)] rounded-full" />
-            </h2>
-          )}
-          {subtitle && <p className="mt-4 text-[color:var(--muted)] max-w-2xl">{subtitle}</p>}
-        </div>
-      )}
-      {children}
+    <section className={clsx('py-12 sm:py-14 md:py-16', className)}>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        {(title || subtitle) && (
+          <div className="mb-8">
+            {title && (
+              <h2 className="text-3xl md:text-4xl font-semibold inline-block relative text-[color:var(--brand)]">
+                {title}
+                <span className="block h-[3px] w-12 mt-3 bg-[var(--brand)] rounded-full" />
+              </h2>
+            )}
+            {subtitle && <p className="mt-4 text-[color:var(--muted)] max-w-2xl">{subtitle}</p>}
+          </div>
+        )}
+        {children}
+      </div>
     </section>
   )
 }

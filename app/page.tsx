@@ -1,4 +1,4 @@
-import { HeroBridge } from '@/components/hero/HeroBridge'
+import { NewHero } from '@/components/hero/NewHero'
 import { StatsStrip } from '@/components/sections/StatsStrip'
 import { PageBand } from '@/components/layout/PageBand'
 import { ContactSection } from '@/components/sections/ContactSection'
@@ -6,16 +6,11 @@ import { ContactSection } from '@/components/sections/ContactSection'
 export default function HomePage() {
   return (
     <>
-      <HeroBridge />
+      <NewHero />
 
       <PageBand>
-        <div className="section-pad pad-x">
-          <StatsStrip />
-        </div>
-
-        <div className="pad-x mt-8 md:mt-10">
-          <ContactSection />
-        </div>
+        <StatsStrip />
+        <ContactSection />
       </PageBand>
     </>
   )
