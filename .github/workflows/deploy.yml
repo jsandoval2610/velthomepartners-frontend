@@ -1,0 +1,55 @@
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  # Allow manual triggers
+  workflow_dispatch: {}
+
+# Set the permissions required for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent concurrent runs on multiple commits
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      # Build the Next.js site and export it as static HTML into the `out` directory
+      - name: Build and export
+        run: |
+          npm run build
+          npx next export
+
+      # Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # Upload the generated static HTML as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./out
+
+      # Deploy the artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
