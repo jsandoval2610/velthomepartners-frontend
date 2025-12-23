@@ -1,7 +1,7 @@
 import { Section } from '@/components/ui/Section'
 import { InvestmentCards } from '@/components/investments/InvestmentCards'
 import { InvestmentsMap } from '@/components/investments/InvestmentsMap'
-import { deals } from '@/data/deals'
+import { deals, mapProperties } from '@/data/deals'
 
 export default function Page() {
   return (
@@ -29,7 +29,7 @@ export default function Page() {
 
       <Section title="Representative Investments" subtitle="Same set showcased on our Investments page, mapped below.">
         <InvestmentCards />
-        <InvestmentsMap properties={deals} />
+        <InvestmentsMap properties={mapProperties} />
       </Section>
     </>
   )

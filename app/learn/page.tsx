@@ -5,8 +5,8 @@ const resources = [
   {
     title: 'Corporate Deck',
     description: 'Our latest overview of strategy, portfolio, and team, built for institutional partners.',
-    file: '/documents/VeltHome%20presentation%20Q4%202025.pdf',
-    meta: 'Presentation • Q4 2025 update',
+    file: '/documents/VeltHome%20Overview.pdf',
+    meta: 'Presentation • Q4 2025',
   },
   {
     title: 'Manufactured Housing White Paper',

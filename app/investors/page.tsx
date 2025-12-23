@@ -10,7 +10,6 @@ return (
                 <Button className="w-full sm:w-auto" onClick={() => alert('Hook to your provider or internal auth later')}>Login</Button>
                 <Button className="w-full sm:w-auto" variant="ghost" onClick={() => (window.location.href = '/contact')}>Request Access</Button>
             </div>
-        <p className="text-sm text-muted mt-6">Disclosures and disclaimers will live here.</p>
     </Section>
 )
 }
