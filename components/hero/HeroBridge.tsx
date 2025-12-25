@@ -10,7 +10,7 @@ export function HeroBridge() {
       {/* Full-bleed image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/bridge.jpg"
+          src="/images/Bridge.jpg"
           alt="Bridge skyline"
           fill
           priority

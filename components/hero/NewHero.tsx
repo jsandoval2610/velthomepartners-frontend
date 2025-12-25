@@ -13,7 +13,7 @@ const CAROUSEL_IMAGES = [
   '/images/carousel/04.jpg',
 ]
 const VIDEO_SRC = '/videos/home-video.mp4'
-const BRIDGE_IMG = '/images/bridge.jpg'
+const BRIDGE_IMG = '/images/Bridge.jpg'
 const MEDIA_GLOW_STYLE: CSSProperties = {
   background: [
     'radial-gradient(circle at 30% 20%, rgba(71, 195, 205, 0.18), transparent 50%)',
