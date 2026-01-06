@@ -46,11 +46,11 @@ const management = [
     title: 'Co-Managing Partner',
     imgSrc: '/images/team/arvind.jpg',
     highlights: [
-      'Leads asset management with focus on manufactured housing',
-      'Real-estate private equity and credit investor since 2018',
+      'Leads asset management',
+      'Real-estate investor since 2012',
     ],
     previous: [
-      'Veritas Capital • Greenbriar Equity • Bain Capital',
+      'Metropolitan Partners Group • Caxton Alternative Management • Veritas Capital • Goldman Sachs',
       'Harvard Business School',
     ],
   },
