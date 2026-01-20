@@ -50,7 +50,7 @@ export function Footer() {
   return (
     <footer className="border-t bg-[var(--bg-washed)]">
       <div className="mx-auto max-w-6xl px-4 py-8 text-sm flex flex-wrap items-center justify-between gap-4">
-        <span className="text-[color:var(--muted)]">© {new Date().getFullYear()} Velthome Partners</span>
+        <span className="text-[color:var(--muted)]">© {new Date().getFullYear()} VeltHome Partners</span>
       </div>
     </footer>
   )

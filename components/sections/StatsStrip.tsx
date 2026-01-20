@@ -66,7 +66,7 @@ export function StatsStrip() {
                   ].join(' ')}
                 />
               </div>
-              <dd className="mt-3 text-lg sm:text-xl font-semibold text-black">5 States</dd>
+              <dd className="mt-3 text-lg sm:text-xl font-semibold text-black">4 States</dd>
             </div>
 
             {/* Item 2 (two-line title supported by the fixed-height box) */}
