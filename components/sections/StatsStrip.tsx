@@ -102,7 +102,7 @@ export function StatsStrip() {
                   ].join(' ')}
                 />
               </div>
-              <dd className="mt-3 text-lg sm:text-xl font-semibold text-black">Over $100MM</dd>
+              <dd className="mt-3 text-lg sm:text-xl font-semibold text-black">~$100MM</dd>
             </div>
           </dl>
         </div>

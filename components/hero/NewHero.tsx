@@ -85,15 +85,15 @@ export function NewHero() {
           {/* Copy block */}
           <div className="flex h-full items-center py-4">
             <div className="max-w-xl">
-              <p className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-[color:var(--brand)]/85">
+              {/* <p className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-[color:var(--brand)]/85">
                 Vertically Integrated
-              </p>
+              </p> */}
               {/* Text color set to button/brand color so it pops */}
               <h1 className="mt-3 text-4xl md:text-[44px] leading-[1.15] font-semibold text-[color:var(--brand)]">
-                Opportunistic value-driven real estate firm
+                Manufactured housing–focused, vertically integrated real estate firm
               </h1>
               <p className="mt-3 text-base md:text-lg text-[color:var(--brand)]/90">
-                Fundamentals-first underwriting, flexible structuring, aligned incentives.
+                Disciplined underwriting, operational execution, long-term value creation
               </p>
               <div className="mt-7 flex gap-3">
                 <Link href="/team" className={`${buttonStyles('primary')} px-6 md:px-7`}>

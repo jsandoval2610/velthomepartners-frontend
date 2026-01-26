@@ -17,7 +17,7 @@ const management = [
   },
   {
     name: 'Teah Gandhi',
-    title: 'Founder & Co-Managing Partner',
+    title: 'Founder',
     imgSrc: '/images/team/TeahGandhi.jpg',
     highlights: [
       'Leads underwriting and ongoing property management',
@@ -26,6 +26,19 @@ const management = [
     previous: [
       'PNC • Salomon Smith Barney • UBS PaineWebber',
       'NYU Stern School of Business'
+    ],
+  },
+  {
+    name: 'Arvind Krishnamurthy',
+    title: 'Founder',
+    imgSrc: '/images/team/arvind.jpg',
+    highlights: [
+      'Leads asset management',
+      'Real-estate investor since 2012',
+    ],
+    previous: [
+      'Metropolitan Partners Group • Caxton Alternative Management • Veritas Capital • Goldman Sachs',
+      'Harvard Business School',
     ],
   },
   {
@@ -42,21 +55,8 @@ const management = [
     ],
   },
   {
-    name: 'Arvind Krishnamurthy',
-    title: 'Co-Managing Partner',
-    imgSrc: '/images/team/arvind.jpg',
-    highlights: [
-      'Leads asset management',
-      'Real-estate investor since 2012',
-    ],
-    previous: [
-      'Metropolitan Partners Group • Caxton Alternative Management • Veritas Capital • Goldman Sachs',
-      'Harvard Business School',
-    ],
-  },
-  {
     name: 'David Prinzivalli',
-    title: 'CFO',
+    title: 'Founder & CFO',
     imgSrc: '/images/team/david.jpg',
     highlights: [
       'Directs property-level finance, reporting, and controls',
